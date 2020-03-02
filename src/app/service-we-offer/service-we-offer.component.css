@@ -1,0 +1,39 @@
+#service-we-offer {
+  margin: 0;
+  padding: 0;
+  color: #383f48;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.child {
+  box-shadow: 0px 5px 20px 0px #bbbbbb;
+}
+
+@media only screen and (max-width: 30rem) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-title h1 {
+    font-size: 7vw;
+  }
+
+}
+
+@media only screen and (min-width: 30.0625rem) and (max-width: 48rem) {
+
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 62rem) and (min-width: 48.0625rem) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

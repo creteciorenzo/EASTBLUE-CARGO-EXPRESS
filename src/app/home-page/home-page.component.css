@@ -1,0 +1,48 @@
+#home {
+  margin: 0;
+  color: white;
+}
+
+.showcase::after {
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(#253e6bb4, #253e6bb4),
+    url("../../assets/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  transition: all 500ms;
+
+}
+
+.home-content {
+  width: auto;
+  z-index: 1;
+  left: 0;
+  right: 0;
+
+}
+
+.home-logo img {
+  height: 15em;
+  width: 15em;
+}
+
+@media only screen and (max-width: 30rem) {
+  .home-content {
+    width: 100%;
+  }
+
+  .home-logo img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .business-name h1 {
+    font-size: 10vw;
+    font-size: 1.5rem;
+  }
+}

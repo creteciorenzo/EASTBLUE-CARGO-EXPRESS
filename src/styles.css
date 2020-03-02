@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import "~@ng-select/ng-select/themes/default.theme.css"; */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 20rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font: normal 100%/1.5 'Montserrat', sans-serif;
+}

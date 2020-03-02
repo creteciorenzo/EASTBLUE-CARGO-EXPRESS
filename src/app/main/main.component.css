@@ -1,0 +1,86 @@
+::selection {
+  background-color: #0272d4;
+  color: #fff;
+}
+
+.button-toggle {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  right: -50px;
+
+  background-color: #0088cc;
+  color: white;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.sidenav-slide {
+  display: block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  /* line-height: 64px; */
+  transition: all 1s;
+}
+
+.sidenav-slide.arrow-left {
+  transform: rotate(900deg);
+}
+
+/* .sidenav-slide:hover {
+  transform: rotate(1260deg);
+} */
+
+.sidenav-slide i {
+  margin-top: 0.9375rem;
+}
+
+.side-menu {
+  padding-top: 3em;
+}
+
+.sidenav-list-hide {
+  display: none;
+}
+
+.sidenav-button {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1em 0;
+  cursor: pointer;
+  padding-left: 2.5em;
+}
+
+.sidenav-button:hover {
+  background: #0273d4;
+}
+
+::ng-deep aside {
+  background-color: #253e6b;
+  /* padding: 2em 1em; */
+  width: 250px;
+  overflow: visible !important;
+}
+
+@media only screen and (max-width: 30rem) {
+  .button-toggle {
+    top: 30%;
+    height: 40px;
+    width: 35px;
+    right: -35px;
+  }
+
+  .sidenav-slide {
+    height: 40px;
+    width: 35px;
+  }
+
+  .sidenav-slide i {
+    font-size: 1.3em;
+    margin-top: 13px;
+  }
+}

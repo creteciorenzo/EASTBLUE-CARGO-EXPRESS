@@ -1,0 +1,23 @@
+#footer {
+  position: relative;
+  padding: 0;
+
+  background-color: #0088cc;
+}
+
+p,
+a,
+li {
+  color: #212429;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 8px;
+
+}
+
+li {
+  list-style: none;
+
+}
