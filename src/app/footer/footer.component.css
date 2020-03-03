@@ -1,14 +1,17 @@
 #footer {
   position: relative;
   padding: 0;
-
+  color: white;
   background-color: #0088cc;
 }
 
-p,
-a,
-li {
-  color: #212429;
+
+#footer a {
+  color: white;
+}
+
+#footer a:hover {
+  color: #383f48;
 }
 
 .social-icons li {
@@ -20,4 +23,54 @@ li {
 li {
   list-style: none;
 
+}
+
+
+@media only screen and (max-width: 30rem) {
+  #footer h5 {
+    font-size: 5vw;
+  }
+
+  #footer p,
+  li,
+  a {
+    font-size: 4.5vw;
+  }
+
+  .parent {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media only screen and (min-width: 30.0625rem) and (max-width: 48rem) {
+  /* .center {
+    text-align: center;
+  }
+
+  .left p {
+    text-align: left;
+    padding-left: 3em;
+  } */
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .policies li {
+    display: inline;
+  }
+
+  .policies li:nth-child(2) {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 62rem) and (min-width: 48.0625rem) {
+
+  .parent {
+    padding-top: 2em;
+    justify-content: center;
+  }
 }

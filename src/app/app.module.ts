@@ -11,9 +11,10 @@ import { HomePageComponent } from "./home-page/home-page.component";
 import { SidebarModule } from "ng-sidebar";
 import { FooterComponent } from './footer/footer.component';
 import { ServiceWeOfferComponent } from './service-we-offer/service-we-offer.component';
+import { WhyChooseUsComponent } from './why-choose-us/why-choose-us.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent],
+  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
