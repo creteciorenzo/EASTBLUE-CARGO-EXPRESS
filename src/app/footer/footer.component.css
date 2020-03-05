@@ -1,17 +1,17 @@
 #footer {
   position: relative;
   padding: 0;
-  color: #383f48;
+  color: #043353;
   font-size: 0.9em;
 }
 
 
 #footer a {
-  color: #383f48;
+  color: #043353;
 }
 
 #footer a:hover {
-  color: #0088cc;
+  color: #18a4e0;
 }
 
 .social-icons li {

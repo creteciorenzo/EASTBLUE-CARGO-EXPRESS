@@ -2,9 +2,15 @@
   position: relative;
   padding: 0;
   margin: 0;
-  background-color: #0088cc;
-  color: white;
+  background-color: #18a4e0;
+  color: #faf8f0;
   font-size: 0.9em;
+}
+
+.custom-list p,
+h5,
+.icon-center {
+  color: #d3dde6;
 }
 
 .custom-list-box {
@@ -14,7 +20,7 @@
 .icon-circle {
   position: absolute;
   left: 0;
-  border-left: 3px solid #383f48;
+  border-left: 3px solid #043353;
   width: 4.5em;
   height: 4.5em;
 

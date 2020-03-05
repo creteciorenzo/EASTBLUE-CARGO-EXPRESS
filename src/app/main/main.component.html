@@ -11,20 +11,19 @@
     <div class="side-menu">
       <div class="side-navigation-container">
         <div [ngClass]="_opened == true ? 'sidenav-list' : 'sidenav-list-hide'">
-          <a class="sidenav-button" (click)="goTop()">Home</a>
-          <a class="sidenav-button">About</a>
-          <a class="sidenav-button">Services</a>
-          <a class="sidenav-button">List of Transport Equipment</a>
-          <a class="sidenav-button">Contact us</a>
+          <a class="sidenav-button" [routerLink]="['']" [routerLinkActive]="['active']" (click)="_toggleOpened()"
+            [routerLinkActiveOptions]="{exact: true}">Home</a>
+          <a class="sidenav-button" [routerLink]="['/about']" [routerLinkActive]="['active']"
+            (click)="_toggleOpened()">About</a>
+          <a class="sidenav-button" [routerLinkActive]="['active']">Services</a>
+          <a class="sidenav-button" [routerLinkActive]="['active']">List of Transport Equipment</a>
+          <a class="sidenav-button" [routerLinkActive]="['active']">Contact us</a>
         </div>
       </div>
     </div>
   </ng-sidebar>
 
   <div ng-sidebar-content style="overflow: hidden;">
-    <!-- <header class="demo-header">
-      <span>ng-sidebar</span>
-    </header> -->
     <router-outlet></router-outlet>
   </div>
 </ng-sidebar-container>

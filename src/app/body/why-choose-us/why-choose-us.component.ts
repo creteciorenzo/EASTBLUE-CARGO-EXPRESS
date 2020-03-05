@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhyChooseUsComponent implements OnInit {
   images = [
-    "../../assets/action-asphalt-auto-automobile-193667.jpg",
+    "../../assets/red-white-and-teal-cargo-ship-on-water-972939.jpg",
     "../../assets/assorted-color-cargo-containers-near-body-of-water-2091159.jpg",
     "../../assets/jet-cloud-landing-aircraft-46148.jpg"
   ]

@@ -1,7 +1,7 @@
-::selection {
-  background-color: #0272d4;
+/* ::selection {
+  background-color: #28bfdb;
   color: #fff;
-}
+} */
 
 .button-toggle {
   position: absolute;
@@ -11,7 +11,7 @@
   right: -50px;
 
   background-color: #e96e56;
-  color: white;
+  color: #faf8f0;
   cursor: pointer;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -48,7 +48,7 @@
 
 .sidenav-button {
   display: block;
-  color: white;
+  color: #faf8f0;
   text-decoration: none;
   padding: 1em 0;
   cursor: pointer;
@@ -56,12 +56,16 @@
   font-family: 'Didact gothic', sans-serif;
 }
 
+.sidenav-button.active {
+  background: #18a4e0;
+}
+
 .sidenav-button:hover {
-  background: #0273d4;
+  background: #18a4e0;
 }
 
 ::ng-deep aside {
-  background-color: #253e6b;
+  background-color: #043353;
   /* padding: 2em 1em; */
   width: 250px;
   overflow: visible !important;
