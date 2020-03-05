@@ -44,14 +44,6 @@ li {
 }
 
 @media only screen and (min-width: 30.0625rem) and (max-width: 48rem) {
-  /* .center {
-    text-align: center;
-  }
-
-  .left p {
-    text-align: left;
-    padding-left: 3em;
-  } */
 
   .parent {
     display: grid;
@@ -68,9 +60,17 @@ li {
 }
 
 @media only screen and (max-width: 62rem) and (min-width: 48.0625rem) {
+  #footer h5 {
+    font-size: 2vw;
+  }
+
+  #footer p,
+  li,
+  a {
+    font-size: 1.9vw;
+  }
 
   .parent {
-    padding-top: 2em;
     justify-content: center;
   }
 }
