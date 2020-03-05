@@ -1,17 +1,17 @@
 #footer {
   position: relative;
   padding: 0;
-  color: white;
-  background-color: #0088cc;
+  color: #383f48;
+  font-size: 0.9em;
 }
 
 
 #footer a {
-  color: white;
+  color: #383f48;
 }
 
 #footer a:hover {
-  color: #383f48;
+  color: #0088cc;
 }
 
 .social-icons li {
@@ -28,13 +28,13 @@ li {
 
 @media only screen and (max-width: 30rem) {
   #footer h5 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 
   #footer p,
   li,
   a {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 
   .parent {

@@ -1,10 +1,57 @@
 <section id="why-choose-us">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="choose-ece pt-5">
-        <div class="col-12">
-          <h1>Why choose ECE</h1>
+      <div class="col-md-6 mt-3">
+        <h3>Why choose ECE</h3>
+
+        <div class="custom-list">
+          <div class="custom-list-box">
+            <div class="icon-circle">
+              <div class="icon-center">
+                <i class="icon fa fa-user-tie fa-3x"></i>
+              </div>
+            </div>
+
+            <h5>Title</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sapiente beatae, optio voluptas
+              expedita sunt!</p>
+          </div>
+          <div class="custom-list-box">
+            <div class="icon-circle">
+              <div class="icon-center">
+                <i class="icon fas fa-truck-moving fa-3x"></i>
+              </div>
+            </div>
+            <h5>Title</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sapiente beatae, optio voluptas
+              expedita sunt!</p>
+          </div>
+          <div class="custom-list-box">
+            <div class="icon-circle">
+              <div class="icon-center">
+                <i class="icon fas fa-globe-asia fa-3x"></i>
+              </div>
+            </div>
+            <h5>Title</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sapiente beatae, optio voluptas
+              expedita sunt!</p>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-6 my-3">
+        <div class="card">
+          <div class="card-body">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="carouselConfig">
+              <div ngxSlickItem *ngFor="let slide of images" class="slide">
+                <img src="{{slide}}" width="498" height="320">
+              </div>
+            </ngx-slick-carousel>
+            <a class="gallery-arrows prev" style="display: block; left: 5%;"><i class="fas fa-chevron-left"></i></a>
+            <a class="gallery-arrows next" style="display: block; right: 5%;"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

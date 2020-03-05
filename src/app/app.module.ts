@@ -13,16 +13,18 @@ import { FooterComponent } from './footer/footer.component';
 import { ServiceWeOfferComponent } from './service-we-offer/service-we-offer.component';
 import { WhyChooseUsComponent } from './why-choose-us/why-choose-us.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
   declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    SlickCarouselModule,
     SidebarModule.forRoot()
   ],
   exports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
