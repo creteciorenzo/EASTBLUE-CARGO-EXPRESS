@@ -9,7 +9,7 @@ export class WhyChooseUsComponent implements OnInit {
   images = [
     "../../assets/action-asphalt-auto-automobile-193667.jpg",
     "../../assets/assorted-color-cargo-containers-near-body-of-water-2091159.jpg",
-    "../../assets/delivery.jpg"
+    "../../assets/jet-cloud-landing-aircraft-46148.jpg"
   ]
 
   carouselConfig = {
