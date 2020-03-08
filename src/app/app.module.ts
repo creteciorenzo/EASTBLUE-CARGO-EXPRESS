@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import * as $ from "jquery";
 
 import { AppRoutingModule } from "./app-routing.module";
@@ -14,7 +15,7 @@ import { ServiceWeOfferComponent } from './body/service-we-offer/service-we-offe
 import { WhyChooseUsComponent } from './body/why-choose-us/why-choose-us.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { AboutEceComponent } from './about-ece/about-ece.component';
+import { AboutEceComponent } from './body/about-ece/about-ece.component';
 @NgModule({
   declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent, AboutEceComponent],
   imports: [
@@ -22,6 +23,7 @@ import { AboutEceComponent } from './about-ece/about-ece.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SlickCarouselModule,
+    FormsModule,
     SidebarModule.forRoot()
   ],
   exports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
