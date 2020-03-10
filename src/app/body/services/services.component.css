@@ -1,0 +1,30 @@
+.services-header {
+  width: auto;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  color: #faf8f0;
+}
+
+.company-services::after {
+  content: '';
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(#253e6bb5, #253e6bb5), url('../../../assets/shakehands.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  transition: all 500ms;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #043353;
+}
+
+.footer {
+  background-color: #18a4e0;
+  margin-top: 55rem;
+}

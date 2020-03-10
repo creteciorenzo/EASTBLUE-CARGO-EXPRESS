@@ -15,9 +15,11 @@
             [routerLinkActiveOptions]="{exact: true}">Home</a>
           <a class="sidenav-button" [routerLink]="['/about']" [routerLinkActive]="['active']"
             (click)="_toggleOpened()">About</a>
-          <a class="sidenav-button" [routerLinkActive]="['active']">Services</a>
-          <a class="sidenav-button" [routerLinkActive]="['active']">List of Transport Equipment</a>
-          <a class="sidenav-button" [routerLinkActive]="['active']">Contact us</a>
+          <a class="sidenav-button" [routerLink]="['/services']" [routerLinkActive]="['active']"
+            (click)="_toggleOpened()">Services</a>
+          <a class="sidenav-button" [routerLinkActive]="['active']" (click)="_toggleOpened()">List of Transport
+            Equipment</a>
+          <a class="sidenav-button" [routerLinkActive]="['active']" (click)="_toggleOpened()">Contact us</a>
         </div>
       </div>
     </div>

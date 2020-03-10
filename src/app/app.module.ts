@@ -16,8 +16,9 @@ import { WhyChooseUsComponent } from './body/why-choose-us/why-choose-us.compone
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AboutEceComponent } from './body/about-ece/about-ece.component';
+import { ServicesComponent } from './body/services/services.component';
 @NgModule({
-  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent, AboutEceComponent],
+  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent, AboutEceComponent, ServicesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
