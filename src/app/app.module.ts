@@ -17,8 +17,10 @@ import { WhyChooseUsComponent } from './body/why-choose-us/why-choose-us.compone
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AboutEceComponent } from './body/about-ece/about-ece.component';
 import { ServicesComponent } from './body/services/services.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { NavigationDirective } from './navigation/navigation.directive';
 @NgModule({
-  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent, AboutEceComponent, ServicesComponent],
+  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent, AboutEceComponent, ServicesComponent, NavigationComponent, NavigationDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,
