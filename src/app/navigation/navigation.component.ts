@@ -19,6 +19,7 @@ export class NavigationComponent implements OnInit {
     this.onScroll();
     this.hamburger();
     this.buttonItem();
+    // this.fadeIn();
   }
 
   onScroll() {
@@ -48,6 +49,16 @@ export class NavigationComponent implements OnInit {
         $('.nav ul').removeClass('open')
       } else {
         $('.nav ul').addClass('open')
+      }
+    })
+  }
+
+  fadeIn() {
+    $('.hamburger').click(() => {
+      if ($('nav ul li').hasClass('fade')) {
+        $('.nav ul li').removeClass('fade')
+      } else {
+        $('.nav ul li').addClass('fade')
       }
     })
   }
