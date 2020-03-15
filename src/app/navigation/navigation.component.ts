@@ -16,7 +16,8 @@ export class NavigationComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.onScroll();
+    // this.onScroll();
+    this.hamburger();
   }
 
   onScroll() {
@@ -29,6 +30,17 @@ export class NavigationComponent implements OnInit {
         $('#navbar').addClass('nav');
       }
     });
+  }
+
+  hamburger() {
+    $('.hamburger').click(() => {
+      if ($('.nav ul').hasClass('open')) {
+        $('.nav ul').removeClass('open')
+      } else {
+        $('.nav ul').addClass('open')
+      }
+
+    })
   }
 
 }
