@@ -5,12 +5,17 @@
     <div class="line"></div>
   </div>
 
+  <div class="company-logo">
+    <img src="../../assets/ece.png" alt="ECE">
+  </div>
 
   <ul class="button-list">
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" href="#">Home</a></li>
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" href="#">About us</a></li>
-    <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['active']" href="#">Services</a></li>
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" href="#">Contact Us</a></li>
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''">Home</a></li>
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="'about'">About
+        us</a></li>
+    <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']">Services</a>
+    </li>
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="''">Contact Us</a></li>
 
   </ul>
 </div>

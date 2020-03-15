@@ -63,4 +63,8 @@ export class NavigationComponent implements OnInit {
     })
   }
 
+  goTop() {
+    window.scrollTo(0, 0);
+  }
+
 }
