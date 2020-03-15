@@ -1,4 +1,4 @@
-<div id="navbar" class="nav">
+<div id="navbar" class="nav" [ngStyle]="{'background': navHeight === true ? '#253e6b' : ''}">
   <div hamburger class="hamburger">
     <div class="line"></div>
     <div class="line"></div>
@@ -9,6 +9,7 @@
   <ul class="button-list">
     <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" href="#">Home</a></li>
     <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['active']" href="#">Services</a></li>
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" href="#">Contact Us</a></li>
     <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" href="#">Contact Us</a></li>
   </ul>
 </div>

@@ -9,14 +9,14 @@ import * as $ from 'jquery';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-
+  navHeight: any;
   constructor() {
 
 
   }
 
   ngOnInit() {
-    // this.onScroll();
+    this.onScroll();
     this.hamburger();
     this.buttonItem();
   }
@@ -24,11 +24,9 @@ export class NavigationComponent implements OnInit {
   onScroll() {
     $(window).scroll(() => {
       if ($(window).scrollTop() >= 50) {
-        $("#navbar").addClass("sticky");
-        $('#navbar').removeClass('nav');
+        this.navHeight = true;
       } else {
-        $("#navbar").removeClass("sticky");
-        $('#navbar').addClass('nav');
+        this.navHeight = false;
       }
     });
   }
@@ -45,7 +43,7 @@ export class NavigationComponent implements OnInit {
   }
 
   buttonItem() {
-    $('.nav ul').click(() => {
+    $('.nav li').click(() => {
       if ($('.nav ul').hasClass('open')) {
         $('.nav ul').removeClass('open')
       } else {
