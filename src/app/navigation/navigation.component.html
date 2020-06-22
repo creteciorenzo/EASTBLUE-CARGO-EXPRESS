@@ -1,23 +1,77 @@
-<div id="navbar" class="nav" [ngStyle]="{'background': navHeight === true ? '#253e6b' : ''}">
-  <div hamburger class="hamburger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+<nav class="full-width nav-bar">
+  <div class="header" id="head">
+    <div class="header-container">
+      <div class="company-logo">
+        <img src=" ../../assets/ece.png" alt="ECE">
+      </div>
+
+      <div class="contact" style="color: #253e6b">
+
+        <a target=" _top" href="mailto:customerservice@eastbluecargoexpress.ph">
+          <i class="far fa-envelope fa-1x"></i><strong> customerservice@eastbluecargoexpress.ph</strong></a>
+        <p><strong><i class="fa fa-phone-alt fa-1x"></i> (02) 805-4612 </strong></p>
+      </div>
+    </div>
+
   </div>
+
+  <div class="menu">
+    <div class="btn-center">
+      <ul class="button-list">
+        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''"
+            (click)="goTop()"><strong>Home</strong></a></li>
+        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="'about'"><strong>About
+              us</strong>
+          </a></li>
+        <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']"
+            (click)="goTop()"><strong>Services</strong></a>
+        </li>
+        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="''"><strong>Contact
+              Us</strong></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</nav>
+
+
+
+<!-- <div id="navbar" class="nav" [ngStyle]="{'background': navHeight === true ? '#253e6b' : ''}">
 
   <div class="company-logo">
     <img src="../../assets/ece.png" alt="ECE">
   </div>
 
+
   <ul class="button-list">
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''">Home</a></li>
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''"
+        (click)="goTop()">Home</a></li>
     <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="'about'">About
         us</a></li>
-    <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']">Services</a>
+    <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']" (click)="goTop()">Services</a>
     </li>
     <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="''">Contact Us</a></li>
 
   </ul>
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
 </div>
+
+<div class="nav-bar-extended">
+  <ul class="button-list">
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''"
+        (click)="goTop()">Home</a></li>
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="'about'">About
+        us</a></li>
+    <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']" (click)="goTop()">Services</a>
+    </li>
+    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="''">Contact Us</a></li>
+
+  </ul>
+</div> -->
 
 <router-outlet></router-outlet>

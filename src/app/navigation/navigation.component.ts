@@ -9,7 +9,8 @@ import * as $ from 'jquery';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-  navHeight: any;
+  navHeight: boolean = false;
+
   constructor() {
 
 
@@ -19,29 +20,29 @@ export class NavigationComponent implements OnInit {
     this.onScroll();
     this.hamburger();
     this.buttonItem();
-    // this.fadeIn();
   }
 
   onScroll() {
     $(window).scroll(() => {
-      if ($(window).scrollTop() >= 50) {
-        this.navHeight = true;
+      var height = $('#head').height();
+      if ($(window).scrollTop() > height) {
+        $('.menu').addClass('fixed')
       } else {
-        this.navHeight = false;
+        $('.menu').removeClass('fixed')
       }
     });
   }
 
   hamburger() {
     $('.hamburger').click(() => {
-      if ($('.nav ul').hasClass('open')) {
-        $('.nav ul').removeClass('open')
-      } else {
-        $('.nav ul').addClass('open')
-      }
-
+      $('.nav-bar-extended').toggleClass('nav-active')
+      this.navHeight = !this.navHeight
     })
+
+
   }
+
+
 
   buttonItem() {
     $('.nav li').click(() => {
@@ -53,18 +54,9 @@ export class NavigationComponent implements OnInit {
     })
   }
 
-  fadeIn() {
-    $('.hamburger').click(() => {
-      if ($('nav ul li').hasClass('fade')) {
-        $('.nav ul li').removeClass('fade')
-      } else {
-        $('.nav ul li').addClass('fade')
-      }
-    })
-  }
 
   goTop() {
-    window.scrollTo(0, 0);
+    this.navHeight = $('#navbar').position().top === 0 ? false : true;
   }
 
 }

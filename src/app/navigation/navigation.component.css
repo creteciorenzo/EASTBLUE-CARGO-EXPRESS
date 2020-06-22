@@ -1,3 +1,99 @@
+.nav-bar {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.header {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header-container {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container .company-logo img {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact a {
+  color: #253e6b;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #e96e56;
+}
+
+.contact a i {
+  width: 20px;
+  height: 20px;
+}
+
+.menu {
+  height: 70px;
+  width: 100%;
+  background: #253e6b;
+
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.menu .btn-center {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.menu .button-list {
+  margin: 0;
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu .button-list {
+  list-style: none;
+}
+
+.menu .button-list .button-link a {
+  padding: 0.5rem;
+  font: normal 100%/3 'Didact Gothic', sans-serif;
+  color: #faf8f0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu .button-list .button-link a:hover {
+  color: #18a4e0;
+}
+
+@media only screen and (max-width: 62rem) {}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -5,150 +101,108 @@
   color: #faf8f0;
   background-image: linear-gradient(to bottom, #253e6b, #253e6b11);
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.company-logo {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  padding-left: 8rem;
+.hamburger {
+  display: none;
+}
+
+
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #faf8f0;
+  margin: 5px;
 }
 
 .company-logo img {
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  animation-delay: 0s;
+  /* animation-delay: 0s;
   transform: translateY(-100rem);
-  animation: slideIn .5s forwards;
+  animation: slideIn .5s forwards; */
 }
 
-.nav ul {
-  list-style: none;
+.nav .button-list {
+  margin: 0;
   display: flex;
-  width: 50%;
-  height: 100%;
+  width: 40%;
   justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-}
 
-.nav ul img {
-  width: 6em;
-  height: 6em;
 }
 
 .nav ul li {
-  transform: translateY(-100rem);
-  animation: dropIn .5s forwards;
-}
-
-.nav ul li:nth-child(1) {
-  animation-delay: .5s;
-}
-
-.nav ul li:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.nav ul li:nth-child(3) {
-  animation-delay: 1.5s;
-}
-
-.nav ul li:nth-child(4) {
-  animation-delay: 2s;
+  list-style: none;
+  /* transform: translateY(-100rem);
+  animation: dropIn .5s forwards; */
 }
 
 .nav a {
-  position: relative;
+  /* position: relative; */
   padding: 0.5rem;
   font: normal 100%/3 'Didact Gothic', sans-serif;
   color: #faf8f0;
   text-decoration: none;
 }
 
-.nav ul li a::before,
-.nav ul li a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #18a4e0;
-  left: 0;
-  transform: scaleX(0);
-  transition: all .5s;
+.nav-bar-extended {
+  display: none;
 }
 
-.nav ul li a::before {
-  top: 0;
-  transform-origin: left;
-}
 
-.nav ul li a::after {
-  bottom: 0;
-  transform-origin: right;
-}
-
-.nav ul li a:hover::before,
-.nav ul li a:hover::after {
-  transform: scaleX(1);
-}
-
-@keyframes dropIn {
-  from {}
-
-  to {
-    transform: translateY(0);
+@media screen and (max-width:1024px) {
+  .nav .button-list {
+    width: 60%;
   }
 }
 
 
-@media screen and (max-width:758px) {
-
-  .hamburger {
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    z-index: 4;
-  }
-
-  .line {
-    width: 30px;
-    height: 3px;
-    background: #faf8f0;
-    margin: 5px;
-  }
+@media screen and (max-width:768px) {
 
   .company-logo {
-    display: none;
+    margin-left: 1em;
   }
 
-  .nav ul {
-    position: fixed;
-    background: #253e6b;
-    height: 70vh;
-    width: 100%;
-    z-index: 2;
-    flex-direction: column;
-    justify-content: flex-start;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-    padding: 7em 0;
+  .nav .button-list li {
+    opacity: 0;
   }
 
-  .nav ul li a {
-    font-size: 1.2em;
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 1em;
+  }
+}
+
+.nav-active {
+  transform: translateY(0%) !important;
+}
+
+.nav-bar-extended {
+  display: block;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+  width: 100%;
+  transform: translateY(-100rem);
+  transition: transform 200ms ease-in;
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
 
-  .nav ul.open {
-    clip-path: circle(1000px at 90% -20%);
-    -webkit-clip-path: circle(1000px at 90% -20%);
-    pointer-events: all;
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
-
 }
