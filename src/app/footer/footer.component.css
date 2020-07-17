@@ -1,17 +1,29 @@
 #footer {
   position: relative;
   padding: 0;
-  color: #043353;
   font-size: 0.9em;
+  color: #faf8f0;
 }
 
 
 #footer a {
-  color: #043353;
+  color: #faf8f0;
+  font-family: 'Montserrat';
+}
+
+#footer li {
+  font-family: 'Montserrat';
 }
 
 #footer a:hover {
   color: #e96e56;
+}
+
+.background {
+  background: #252b35;
+  height: 250px;
+  display: flex;
+  align-items: center;
 }
 
 .social-icons li {
@@ -23,6 +35,11 @@
 li {
   list-style: none;
 
+}
+
+.footer-copyright {
+  background: #253e6b;
+  color: #fff;
 }
 
 

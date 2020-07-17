@@ -5,28 +5,48 @@
         <img src=" ../../assets/ece.png" alt="ECE">
       </div>
 
-      <div class="contact" style="color: #253e6b">
+      <div class="contact" style="color: #000000">
+        <div class="first-row">
+          <p><i class="fa fa-map-marker-alt fa-1x"></i> 8133 Leo Bldg. II, 4th floor. Dr. A Santos
+            Ave. San Dioniso,
+            Parañaque
+            City</p>
+        </div>
 
-        <a target=" _top" href="mailto:customerservice@eastbluecargoexpress.ph">
-          <i class="far fa-envelope fa-1x"></i><strong> customerservice@eastbluecargoexpress.ph</strong></a>
-        <p><strong><i class="fa fa-phone-alt fa-1x"></i> (02) 805-4612 </strong></p>
+        <div class="second-row">
+          <a target=" _top" href="mailto:customerservice@eastbluecargoexpress.ph">
+            <i class="far fa-envelope fa-1x"></i>
+            customerservice@eastbluecargoexpress.ph</a>
+          <p><i class="fa fa-phone-alt fa-1x"></i> (02) 805-4612 </p>
+        </div>
+
       </div>
     </div>
 
   </div>
 
   <div class="menu">
+
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
     <div class="btn-center">
       <ul class="button-list">
-        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''"
-            (click)="goTop()"><strong>Home</strong></a></li>
-        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="'about'"><strong>About
+        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{exact:true}"><strong>Home</strong></a></li>
+
+        <li class="button-link"><a [routerLink]="['/about']" [routerLinkActive]="['active']"><strong>About
               us</strong>
           </a></li>
-        <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']"
-            (click)="goTop()"><strong>Services</strong></a>
+
+        <li class="button-link"><a [routerLink]="['/services']"
+            [routerLinkActive]="['active']"><strong>Services</strong></a>
         </li>
-        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="''"><strong>Contact
+
+        <li class="button-link"><a [routerLink]="['/contact']" [routerLinkActive]="['active']"><strong>Contact
               Us</strong></a></li>
       </ul>
     </div>
@@ -34,44 +54,5 @@
   </div>
 
 </nav>
-
-
-
-<!-- <div id="navbar" class="nav" [ngStyle]="{'background': navHeight === true ? '#253e6b' : ''}">
-
-  <div class="company-logo">
-    <img src="../../assets/ece.png" alt="ECE">
-  </div>
-
-
-  <ul class="button-list">
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''"
-        (click)="goTop()">Home</a></li>
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="'about'">About
-        us</a></li>
-    <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']" (click)="goTop()">Services</a>
-    </li>
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="''">Contact Us</a></li>
-
-  </ul>
-  <div class="hamburger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </div>
-</div>
-
-<div class="nav-bar-extended">
-  <ul class="button-list">
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']" [fragment]="''"
-        (click)="goTop()">Home</a></li>
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="'about'">About
-        us</a></li>
-    <li class="button-link"><a [routerLink]="['/services']" [routerLinkActive]="['']" (click)="goTop()">Services</a>
-    </li>
-    <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['']" [fragment]="''">Contact Us</a></li>
-
-  </ul>
-</div> -->
 
 <router-outlet></router-outlet>

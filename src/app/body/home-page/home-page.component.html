@@ -18,9 +18,56 @@
       </div>
     </div>
   </div>
+
 </div>
-<app-about-ece></app-about-ece>
-<!-- <app-why-choose-us></app-why-choose-us> -->
-<div class="container-fluid" style="background-color: #18a4e0;">
-  <app-footer></app-footer>
+
+
+<div class="body-content p-5">
+  <div class="container">
+    <div class="row justify-content-around text-center">
+      <div class="col-md-12">
+        <h2>What we offer</h2>
+      </div>
+      <div class="col-md-3">
+        <img src="../../../assets/service1.jpg" alt="Service-1" class="img-thumbnail">
+        <h6>International/Domestic Freight Forwarding</h6>
+      </div>
+      <div class="col-md-3">
+        <img src="../../../assets/service2.jpeg" alt="Service-2" class="img-thumbnail">
+        <h6>Customs Brokerage</h6>
+      </div>
+      <div class="col-md-3">
+        <img src="../../../assets/service4.jpg" alt="Service-3" class="img-thumbnail">
+        <h6>Trucking Service</h6>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row justify-content-around text-center p-5">
+      <div class="col-md-12">
+        <h2>About</h2>
+      </div>
+      <div class="col-md-12">
+        <p>EAST BLUE CARGO EXPRESS is a product of dynamic and experienced professionals in the Logistics Industry with
+          the
+          aim of providing highly depenedable and cost offeicient services that will cater clients Domestic and
+          International Services.</p>
+
+        <p>Started as a brokearge and trucking company Jmeg Transport and EBG Customs brokerage the management saw the
+          push
+          of Having its own NVOCC to furthermore cater the vast demands of logistics and freight services thus making
+          sure
+          of our client that we are commited to be the one stop logistics of their choice.</p>
+      </div>
+      <div class="col-md-3">
+        <button [routerLink]="['/about']" (click)="goTop()" type="button" class="btn btn-outline-primary">Read
+          more</button>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
 </div>
+
+
+<app-footer></app-footer>
