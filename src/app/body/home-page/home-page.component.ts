@@ -6,19 +6,9 @@ import * as $ from 'jquery';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  navHeight: boolean = false;
   constructor() { }
 
   ngOnInit() {
-  }
-
-  goTop() {
-    //   $(window).scroll(function (event) {
-    //     var scroll = $(window).scrollTop();
-    //     // Do something
-    // });
-
-    $(window).scrollTop(0, 0);
   }
 
 
