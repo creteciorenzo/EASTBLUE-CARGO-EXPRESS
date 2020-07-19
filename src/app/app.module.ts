@@ -18,8 +18,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AboutEceComponent } from './body/about-ece/about-ece.component';
 import { ServicesComponent } from './body/services/services.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ContactUsComponent } from './body/contact-us/contact-us.component';
 @NgModule({
-  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent, AboutEceComponent, ServicesComponent, NavigationComponent],
+  declarations: [AppComponent, MainComponent, HomePageComponent, FooterComponent, ServiceWeOfferComponent, WhyChooseUsComponent, AboutEceComponent, ServicesComponent, NavigationComponent, ContactUsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

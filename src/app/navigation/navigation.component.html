@@ -7,7 +7,8 @@
 
       <div class="contact" style="color: #000000">
         <div class="first-row">
-          <p><i class="fa fa-map-marker-alt fa-1x"></i> 8133 Leo Bldg. II, 4th floor. Dr. A Santos
+          <p><i class="fa fa-map-marker-alt fa-1x"></i>
+            8133 Leo Bldg. II, 4th floor. Dr. A Santos
             Ave. San Dioniso,
             Parañaque
             City</p>
@@ -16,8 +17,8 @@
         <div class="second-row">
           <a target=" _top" href="mailto:customerservice@eastbluecargoexpress.ph">
             <i class="far fa-envelope fa-1x"></i>
-            customerservice@eastbluecargoexpress.ph</a>
-          <p><i class="fa fa-phone-alt fa-1x"></i> (02) 805-4612 </p>
+            customerservice@eastbluecargoexpress.ph</a><br>
+          <a href="tel:028054612"><i class="fa fa-phone-alt fa-1x"></i> (02) 805-4612</a>
         </div>
 
       </div>
@@ -46,7 +47,7 @@
             [routerLinkActive]="['active']"><strong>Services</strong></a>
         </li>
 
-        <li class="button-link"><a [routerLink]="['/contact']" [routerLinkActive]="['active']"><strong>Contact
+        <li class="button-link"><a [routerLink]="['/contact-us']" [routerLinkActive]="['active']"><strong>Contact
               Us</strong></a></li>
       </ul>
     </div>
@@ -56,3 +57,5 @@
 </nav>
 
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>

@@ -24,7 +24,7 @@
 
 <div class="body-content p-5">
   <div class="container">
-    <div class="row justify-content-around text-center">
+    <div class="row justify-content-around text-center p-5">
       <div class="col-md-12">
         <h2>What we offer</h2>
       </div>
@@ -39,6 +39,10 @@
       <div class="col-md-3">
         <img src="../../../assets/service4.jpg" alt="Service-3" class="img-thumbnail">
         <h6>Trucking Service</h6>
+      </div>
+      <div class="col-md-4">
+        <button [routerLink]="['/services']" type="button" class="btn btn-outline-primary">Learn More<span
+            class="badge"><i class="fa fa-arrow-right"></i></span></button>
       </div>
     </div>
 
@@ -61,13 +65,10 @@
           of our client that we are commited to be the one stop logistics of their choice.</p>
       </div>
       <div class="col-md-3">
-        <button [routerLink]="['/about']" (click)="goTop()" type="button" class="btn btn-outline-primary">Read
-          more</button>
+        <button [routerLink]="['/about']" type="button" class="btn btn-outline-primary">Learn More<span class="badge"><i
+              class="fa fa-arrow-right"></i></span></button>
       </div>
     </div>
     <hr class="featurette-divider">
   </div>
 </div>
-
-
-<app-footer></app-footer>

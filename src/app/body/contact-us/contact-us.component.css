@@ -1,0 +1,38 @@
+.parallax {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(#2b3547b4, #2b3547b4), url("../../../assets/shakehands.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details ul li {
+  margin: 2rem 0;
+}
+
+.details ul li p {
+  margin: 0;
+}
+
+.details a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.details a:hover {
+  color: #e96e56;
+}
+
+.details i {
+  width: 20px;
+  height: 20px;
+  color: #717d80;
+}

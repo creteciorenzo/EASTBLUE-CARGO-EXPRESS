@@ -4,6 +4,7 @@ import { HomePageComponent } from "./body/home-page/home-page.component";
 import { AboutEceComponent } from './body/about-ece/about-ece.component';
 import { ServicesComponent } from './body/services/services.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ContactUsComponent } from './body/contact-us/contact-us.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,8 @@ const routes: Routes = [
     children: [
       { path: '', component: HomePageComponent },
       { path: 'about', component: AboutEceComponent },
-      { path: 'services', component: ServicesComponent }
+      { path: 'services', component: ServicesComponent },
+      { path: 'contact-us', component: ContactUsComponent }
     ]
   }
 
@@ -20,7 +22,7 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     onSameUrlNavigation: 'reload',
-    // initialNavigation: 'enabled',
+    initialNavigation: 'enabled',
     scrollPositionRestoration: 'top'
   })],
   exports: [RouterModule]
