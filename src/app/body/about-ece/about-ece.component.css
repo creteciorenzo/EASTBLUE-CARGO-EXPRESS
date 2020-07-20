@@ -14,10 +14,14 @@
   background-size: cover;
 }
 
+.about-content {
+  position: relative;
+}
+
 .background::after {
   content: '';
   position: absolute;
-  height: 850px;
+  height: 100%;
   width: 100%;
   background-image: url("../../../assets/jet-cloud-landing-aircraft-46148.jpg");
   background-size: cover;
@@ -29,19 +33,13 @@
   opacity: 0.2;
 }
 
-.about-content {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-.content-container {
+.text-container {
   background: rgba(255, 255, 255, 0.493);
   border-radius: 60px 60px 0 60px;
   box-shadow: 0px 5px 20px 0px #bbbbbb;
 }
 
-.content-container.left {
+.text-container.left {
   background: rgba(255, 255, 255, 0.493);
   border-radius: 60px 60px 60px 0;
   box-shadow: 0px 5px 20px 0px #bbbbbb;
