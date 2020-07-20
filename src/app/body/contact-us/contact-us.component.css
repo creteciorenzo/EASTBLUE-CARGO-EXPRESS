@@ -1,10 +1,10 @@
 .parallax {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(#2b3547b4, #2b3547b4), url("../../../assets/shakehands.jpg");
+  background-image: linear-gradient(#2b3547b4, #2b3547b4), url("../../../assets/selective-focus-photo-of-green-telephone-955081.jpg");
   min-height: 200px;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }

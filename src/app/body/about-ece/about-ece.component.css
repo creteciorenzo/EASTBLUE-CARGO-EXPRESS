@@ -14,9 +14,10 @@
   background-size: cover;
 }
 
-.about-content::after {
+.background::after {
   content: '';
-  height: 600px;
+  position: absolute;
+  height: 850px;
   width: 100%;
   background-image: url("../../../assets/jet-cloud-landing-aircraft-46148.jpg");
   background-size: cover;
@@ -28,8 +29,8 @@
   opacity: 0.2;
 }
 
-.content {
-  position: absolute;
+.about-content {
+  position: relative;
   z-index: 1;
   width: 100%;
 }

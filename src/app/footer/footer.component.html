@@ -1,6 +1,6 @@
 <footer id="footer" class="custom-footer mt-1">
   <div class="background">
-    <div class="container">
+    <div class="container py-5">
       <div class=" row parent justify-content-center text-center">
         <div class="col-md-3 center left padding">
           <h5 class="text-color-dark">our location</h5>
@@ -25,10 +25,16 @@
         <div class="col-md-3 center policies">
           <h5 class="text-color-dark">links</h5>
           <ul class="p-0">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li> <a [routerLink]="['']" [routerLinkActive]="['active']"
+                [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+            <li><a [routerLink]="['/about']" [routerLinkActive]="['active']">About us
+              </a></li>
+            <li><a [routerLink]="['/services']" [routerLinkActive]="['active']">Services</a></li>
+            <li><a [routerLink]="['/contact-us']" [routerLinkActive]="['active']">Contact
+                Us</a></li>
+
+
+
           </ul>
         </div>
         <div class="col-md-3 center">

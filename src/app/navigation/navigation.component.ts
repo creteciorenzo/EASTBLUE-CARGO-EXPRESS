@@ -18,8 +18,7 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
     this.onScroll();
-    this.hamburger();
-    this.buttonItem();
+    this.burgerToggle();
   }
 
   onScroll() {
@@ -33,30 +32,28 @@ export class NavigationComponent implements OnInit {
     });
   }
 
-  hamburger() {
+  burgerToggle() {
+
     $('.hamburger').click(() => {
-      $('.nav-bar-extended').toggleClass('nav-active')
-      this.navHeight = !this.navHeight
+      $('.btn-center').toggleClass('active')
+      $('.backdrop').toggleClass('backdrop-show')
+
     })
 
-
-  }
-
-
-
-  buttonItem() {
-    $('.nav li').click(() => {
-      if ($('.nav ul').hasClass('open')) {
-        $('.nav ul').removeClass('open')
-      } else {
-        $('.nav ul').addClass('open')
-      }
+    $('.btn-center a').click(() => {
+      $('.btn-center').toggleClass('active')
+      $('.backdrop').toggleClass('backdrop-show')
     })
-  }
 
+    $('.backdrop').click(() => {
+      $('.btn-center').toggleClass('active')
+      $('.backdrop').toggleClass('backdrop-show')
+    })
 
-  goTop() {
-    this.navHeight = $('#navbar').position().top === 0 ? false : true;
+    $('.close-btn').click(() => {
+      $('.btn-center').toggleClass('active')
+      $('.backdrop').toggleClass('backdrop-show')
+    })
   }
 
 }

@@ -10,12 +10,14 @@ const routes: Routes = [
   {
     path: '', component: NavigationComponent,
     children: [
+
       { path: '', component: HomePageComponent },
       { path: 'about', component: AboutEceComponent },
       { path: 'services', component: ServicesComponent },
       { path: 'contact-us', component: ContactUsComponent }
     ]
-  }
+  },
+  { path: '', pathMatch: 'full', redirectTo: '' }
 
 ];
 

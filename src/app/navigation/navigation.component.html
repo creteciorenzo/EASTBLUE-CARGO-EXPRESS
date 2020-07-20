@@ -27,29 +27,25 @@
   </div>
 
   <div class="menu">
-
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
+    <div class="btn-wrapper">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </div>
 
+    <div class="backdrop"></div>
+
     <div class="btn-center">
-      <ul class="button-list">
-        <li class="button-link"><a [routerLink]="['']" [routerLinkActive]="['active']"
-            [routerLinkActiveOptions]="{exact:true}"><strong>Home</strong></a></li>
-
-        <li class="button-link"><a [routerLink]="['/about']" [routerLinkActive]="['active']"><strong>About
-              us</strong>
-          </a></li>
-
-        <li class="button-link"><a [routerLink]="['/services']"
-            [routerLinkActive]="['active']"><strong>Services</strong></a>
-        </li>
-
-        <li class="button-link"><a [routerLink]="['/contact-us']" [routerLinkActive]="['active']"><strong>Contact
-              Us</strong></a></li>
-      </ul>
+      <div class="close-btn"><i class="fas fa-times"></i></div>
+      <a [routerLink]="['']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+      <a [routerLink]="['/about']" [routerLinkActive]="['active']">About
+        us
+      </a>
+      <a [routerLink]="['/services']" [routerLinkActive]="['active']">Services</a>
+      <a [routerLink]="['/contact-us']" [routerLinkActive]="['active']">Contact
+        Us</a>
     </div>
 
   </div>
