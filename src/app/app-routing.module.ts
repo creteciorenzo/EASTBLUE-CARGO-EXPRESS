@@ -5,6 +5,7 @@ import { AboutEceComponent } from './body/about-ece/about-ece.component';
 import { ServicesComponent } from './body/services/services.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactUsComponent } from './body/contact-us/contact-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -14,10 +15,12 @@ const routes: Routes = [
       { path: '', component: HomePageComponent },
       { path: 'about', component: AboutEceComponent },
       { path: 'services', component: ServicesComponent },
-      { path: 'contact-us', component: ContactUsComponent }
+      { path: 'contact-us', component: ContactUsComponent },
+      { path: '**', component: PageNotFoundComponent }
     ]
   },
-  { path: '', pathMatch: 'full', redirectTo: '' }
+  { path: '', pathMatch: 'full', redirectTo: '' },
+
 
 ];
 
